@@ -35,22 +35,22 @@ Melalui praktikum ini, saya mempelajari cara menyiapkan perangkat pengembangan y
 ### Hasil Praktikum
 
 #### 1. Hello World
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (3)" src="https://github.com/user-attachments/assets/c84898e3-c008-400e-b247-fbd3b4472362" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03 (3)" src="https://github.com/user-attachments/assets/c84898e3-c008-400e-b247-fbd3b4472362" />
 
 #### 2. Widget Column
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (1)" src="https://github.com/user-attachments/assets/7d37d63d-a06e-4af6-8f95-6595d3feedda" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03 (1)" src="https://github.com/user-attachments/assets/7d37d63d-a06e-4af6-8f95-6595d3feedda" />
 
 #### 3. Widget Row
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (2)" src="https://github.com/user-attachments/assets/472f6fff-ff06-42fc-ad9c-a142db062753" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03 (2)" src="https://github.com/user-attachments/assets/472f6fff-ff06-42fc-ad9c-a142db062753" />
 
 #### 4. Form Produk
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (4)" src="https://github.com/user-attachments/assets/7147903a-937d-4627-bc3c-019c8982f251" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03 (4)" src="https://github.com/user-attachments/assets/7147903a-937d-4627-bc3c-019c8982f251" />
 
 #### 5. Detail Produk
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (5)" src="https://github.com/user-attachments/assets/6120ceeb-4d08-4906-b074-2941062e79ab" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03 (5)" src="https://github.com/user-attachments/assets/6120ceeb-4d08-4906-b074-2941062e79ab" />
 
 #### 6. List Data Produk
-<img alt="WhatsApp Image 2026-10-28 at 22 30 03" src="https://github.com/user-attachments/assets/3a415852-8b1f-4657-ac43-fd59de1ec8ab" />
+<img width="250" alt="WhatsApp Image 2026-10-28 at 22 30 03" src="https://github.com/user-attachments/assets/3a415852-8b1f-4657-ac43-fd59de1ec8ab" />
 
 
 ### Deskripsi Teknis & Non-Teknis
