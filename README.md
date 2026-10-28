@@ -50,7 +50,7 @@ Melalui praktikum ini, saya mempelajari cara menyiapkan perangkat pengembangan y
 <img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03 (5)" src="https://github.com/user-attachments/assets/6120ceeb-4d08-4906-b074-2941062e79ab" />
 
 #### 6. List Data Produk
-<img height="1600" alt="WhatsApp Image 2026-10-28 at 22 30 03" src="https://github.com/user-attachments/assets/3a415852-8b1f-4657-ac43-fd59de1ec8ab" />
+<img alt="WhatsApp Image 2026-10-28 at 22 30 03" src="https://github.com/user-attachments/assets/3a415852-8b1f-4657-ac43-fd59de1ec8ab" />
 
 
 ### Deskripsi Teknis & Non-Teknis
