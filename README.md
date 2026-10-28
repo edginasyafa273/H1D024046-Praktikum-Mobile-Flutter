@@ -58,12 +58,12 @@ Melalui praktikum ini, saya mempelajari cara menyiapkan perangkat pengembangan y
 - **Non-Teknis:** Pada pertemuan kedua, praktikum berfokus pada pengenalan framework Flutter dan pembuatan antarmuka aplikasi mobile. Praktikum meliputi pembuatan tampilan sederhana, penyusunan elemen secara vertikal dan horizontal, pengisian formulir produk, navigasi antarhalaman, serta penyajian data produk dalam bentuk daftar.
 
 - **Teknis:**
-  1. Membuat tampilan aplikasi menggunakan widget dasar Flutter, seperti `MaterialApp`, `Scaffold`, `AppBar`, `Center`, dan `Text`.
-  2. Mengimplementasikan widget `Column` dan `Row` untuk mengatur tata letak elemen secara vertikal dan horizontal.
-  3. Membuat formulir input produk menggunakan `StatefulWidget`, `TextField`, dan `TextEditingController`.
-  4. Menggunakan `Navigator.push` dan `MaterialPageRoute` untuk melakukan navigasi dari halaman Form Produk ke halaman Detail Produk.
-  5. Menampilkan informasi produk menggunakan widget `Text`.
-  6. Membuat daftar produk menggunakan widget `ListView`, `Card`, dan `ListTile`.
+1. Membuat tampilan aplikasi menggunakan widget dasar Flutter, seperti `MaterialApp`, `Scaffold`, `AppBar`, `Center`, dan `Text`.
+2. Mengimplementasikan widget `Column` dan `Row` untuk mengatur tata letak elemen secara vertikal dan horizontal.
+3. Membuat formulir input produk menggunakan `StatefulWidget`, `TextField`, dan `TextEditingController`.
+4. Menggunakan `Navigator.push` dan `MaterialPageRoute` untuk melakukan navigasi dari halaman Form Produk ke halaman Detail Produk.
+5. Menampilkan informasi produk menggunakan widget `Text`.
+6. Membuat daftar produk menggunakan widget `ListView`, `Card`, dan `ListTile`.
 
 ### Kesimpulan Pertemuan 2
 
