@@ -75,6 +75,20 @@ Praktikum pertemuan kedua memberikan pengalaman dalam membangun beberapa halaman
 
 **Tanggal**: Rabu, 4 November 2026
 
+### Hasil Praktikum
+
+#### 1. Halaman Login
+<img width="250" alt="Halaman Login" src="assets/pertemuan3/login.jpg" />
+
+#### 2. Halaman Home
+<img width="250" alt="Halaman Home" src="assets/pertemuan3/home.jpg" />
+
+#### 3. Side Menu (Drawer)
+<img width="250" alt="Side Menu Drawer" src="assets/pertemuan3/sidemenu.jpg" />
+
+#### 4. Halaman About
+<img width="250" alt="Halaman About" src="assets/pertemuan3/about.jpg" />
+
 ### Deskripsi Teknis & Non-Teknis
 
 - **Non-Teknis:** Praktikum pertemuan ketiga membahas implementasi sistem autentikasi pengguna dan navigasi antarmuka melalui side menu (drawer). Praktikan mempelajari penyimpanan data lokal untuk sesi pengguna menggunakan Shared Preferences sehingga username yang diinputkan pada halaman login dapat ditampilkan kembali pada halaman utama aplikasi.
