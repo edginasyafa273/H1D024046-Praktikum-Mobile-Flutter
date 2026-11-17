@@ -1,25 +1,32 @@
-
 import 'package:flutter/material.dart';
-import 'package:belajar/ui/produk_form.dart';
+import 'package:belajar/login_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplikasi Flutter Pertama',
+      title: 'Flutter Menu',
       theme: ThemeData(
+        useMaterial3: false,
+        primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+          ),
+        ),
       ),
-      home: const ProdukForm(),
-    );
+      home: const LoginPage(),
+    ); // MaterialApp
   }
 }
