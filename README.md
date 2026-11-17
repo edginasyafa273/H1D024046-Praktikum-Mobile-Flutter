@@ -111,6 +111,23 @@ Melalui praktikum ketiga ini, saya mempelajari bagaimana mengelola alur autentik
 
 **Tanggal**: Rabu, 11 November 2026
 
+### Hasil Praktikum
+
+#### 1. List Data Produk
+<img width="250" alt="List Data Produk" src="assets/pertemuan4/list_produk.jpg" />
+
+#### 2. Form Tambah Produk (Kosong)
+<img width="250" alt="Form Tambah Produk" src="assets/pertemuan4/tambah_produk.jpg" />
+
+#### 3. Form Tambah Produk (Terisi)
+<img width="250" alt="Form Tambah Produk Terisi" src="assets/pertemuan4/tambah_produk_isi.jpg" />
+
+#### 4. Detail Produk
+<img width="250" alt="Detail Produk" src="assets/pertemuan4/detail_produk.jpg" />
+
+#### 5. Form Ubah Produk
+<img width="250" alt="Form Ubah Produk" src="assets/pertemuan4/ubah_produk.jpg" />
+
 ### Deskripsi Teknis & Non-Teknis
 
 - **Non-Teknis:** Pada pertemuan keempat, praktikum berfokus pada pembangunan backend RESTful API menggunakan framework CodeIgniter 4 yang terhubung ke basis data MySQL (XAMPP), serta perancangan model data dan struktur antarmuka (UI) CRUD pada aplikasi Flutter Tokokita.
