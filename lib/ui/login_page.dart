@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:belajar/bloc/login_bloc.dart';
+import 'package:belajar/helpers/user_info.dart';
+import 'package:belajar/ui/produk_page.dart';
 import 'package:belajar/ui/registrasi_page.dart';
+import 'package:belajar/widget/warning_dialog.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -79,11 +83,54 @@ class _LoginPageState extends State<LoginPage> {
   //Membuat Tombol Login
   Widget _buttonLogin() {
     return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.grey[300],
+        foregroundColor: Colors.black,
+      ),
       child: const Text("Login"),
       onPressed: () {
         var validate = _formKey.currentState!.validate();
+        if (validate) {
+          if (!_isLoading) _submit();
+        }
       },
     );
+  }
+
+  void _submit() {
+    _formKey.currentState!.save();
+    setState(() {
+      _isLoading = true;
+    });
+    LoginBloc.login(
+            email: _emailTextboxController.text,
+            password: _passwordTextboxController.text)
+        .then((value) async {
+      if (value.code == 200) {
+        await UserInfo().setToken(value.token.toString());
+        await UserInfo().setUserID(value.userID ?? 0);
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const ProdukPage()));
+      } else {
+        showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (BuildContext context) => const WarningDialog(
+                  description: "Login gagal, silahkan coba lagi",
+                ));
+      }
+    }, onError: (error) {
+      print(error);
+      showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (BuildContext context) => const WarningDialog(
+                description: "Login gagal, silahkan coba lagi",
+              ));
+    });
+    setState(() {
+      _isLoading = false;
+    });
   }
 
   // Membuat menu untuk membuka halaman registrasi
@@ -102,4 +149,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-

@@ -156,3 +156,52 @@ Melalui praktikum ketiga ini, saya mempelajari bagaimana mengelola alur autentik
 
 Praktikum pertemuan keempat memberikan pemahaman komprehensif mengenai konsep arsitektur RESTful API, perancangan skema database MySQL, serta pembuatan struktur model dan antarmuka aplikasi mobile pada Flutter. Struktur kode yang terpisah secara modular antara model dan UI memudahkan pemeliharaan kode dan persiapan integrasi data secara langsung ke server API.
 
+
+---
+
+## 📝 Tugas Pertemuan 5: CRUD Module Flutter Bagian 2 (Integrasi REST API CodeIgniter 4)
+
+**Tanggal**: Rabu, 18 November 2026
+
+### Hasil Praktikum
+
+#### 1. Form Registrasi & Dialog Sukses
+<img width="250" alt="Registrasi Berhasil" src="assets/pertemuan5/registrasi_berhasil.jpg" />
+
+#### 2. Form Login & Dialog Validasi / Gagal
+<img width="250" alt="Halaman Login dan Dialog Gagal" src="assets/pertemuan5/login.jpg" />
+
+#### 3. List Data Produk (Integrasi REST API Database MySQL)
+<img width="250" alt="List Data Produk Dinamis" src="assets/pertemuan5/list_produk.jpg" />
+
+#### 4. Side Menu (Drawer) & Logout Sesi
+<img width="250" alt="Drawer Logout" src="assets/pertemuan5/drawer_logout.jpg" />
+
+### Deskripsi Teknis & Non-Teknis
+
+- **Non-Teknis:** Praktikum pertemuan kelima berfokus pada integrasi penuh antara aplikasi mobile Flutter (client-side) dengan backend server RESTful API CodeIgniter 4 dan basis data MySQL (Laragon/XAMPP). Praktikan mempelajari pengelolaan autentikasi pengguna berbasis token Bearer, penanganan respon server dan pop-up dialog konfirmasi, siklus CRUD data produk yang terhubung secara dinamis ke database, serta manajemen sesi login dan logout pengguna.
+
+- **Teknis:**
+1. Menambahkan dependensi `http` dan `shared_preferences` pada `pubspec.yaml` untuk komunikasi jaringan REST API dan persistensi session token.
+2. Membangun modul helper jaringan pada folder `lib/helpers/`:
+   - `user_info.dart`: Mengelola penyimpanan token otorisasi dan identitas pengguna (`userID`) ke penyimpanan lokal menggunakan `SharedPreferences`.
+   - `app_exception.dart`: Penanganan kelas eksepsi kustom untuk status kode HTTP (400, 401, 403, 422, 500).
+   - `api.dart`: Helper HTTP client yang mengimplementasikan metode GET, POST, dan DELETE dengan header `Authorization: Bearer <token>`.
+   - `api_url.dart`: Penyedia endpoint URL API server backend.
+3. Mengimplementasikan arsitektur BLoC (Business Logic Component) pada folder `lib/bloc/`:
+   - `registrasi_bloc.dart`: Menghubungkan proses pendaftaran akun ke endpoint POST `/registrasi`.
+   - `login_bloc.dart`: Mengelola autentikasi pengguna ke endpoint POST `/login` dan menerima token akses.
+   - `logout_bloc.dart`: Menghapus sesi token dari penyimpanan lokal.
+   - `produk_bloc.dart`: Menangani operasi data produk (`getProduks`, `addProduk`, `updateProduk`, `deleteProduk`).
+4. Membuat widget dialog umum (`widget/success_dialog.dart` dan `widget/warning_dialog.dart`) untuk menampilkan umpan balik sukses atau peringatan gagal interaksi API.
+5. Memodifikasi halaman antarmuka pengguna (`lib/ui/`):
+   - `registrasi_page.dart`: Form pendaftaran akun baru dengan validasi dan pemanggilan `RegistrasiBloc`.
+   - `login_page.dart`: Form autentikasi yang menyimpan sesi token ke `UserInfo` serta navigasi langsung menuju halaman `ProdukPage`.
+   - `produk_page.dart`: Menggunakan widget `FutureBuilder` untuk memuat dan menampilkan daftar produk secara dinamis langsung dari database MySQL via REST API, serta drawer dengan aksi logout.
+   - `produk_form.dart`: Menangani penambahan produk baru (POST) dan pembaharuan data produk (PUT/POST update).
+   - `produk_detail.dart`: Menampilkan rincian produk, navigasi ke form ubah (tombol hijau `EDIT`), dan konfirmasi penghapusan data (tombol merah `DELETE`).
+6. Mengonfigurasi `lib/main.dart` dengan pengecekan status login otomatis saat aplikasi pertama kali dibuka (`isLogin()` via `UserInfo().getToken()`), serta menyetel tema Material 2 dengan gaya tombol yang presisi sesuai modul.
+
+### Kesimpulan Pertemuan 5
+
+Melalui praktikum pertemuan kelima ini, saya berhasil mengintegrasikan aplikasi Flutter secara menyeluruh (*end-to-end*) dengan backend server RESTful API CodeIgniter 4 dan database MySQL. Seluruh operasi CRUD (Create, Read, Update, Delete) serta sistem autentikasi pendaftaran, login, dan logout telah berfungsi secara dinamis dan terhubung langsung dengan basis data server. Pemisahan arsitektur menggunakan BLoC, Model, Helpers, Widget, dan UI membuat kode aplikasi lebih terstruktur, modular, mudah dikembangkan, dan aman.
